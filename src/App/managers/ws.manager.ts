@@ -50,6 +50,8 @@ export default class WSManager extends EventEmitter {
 			wssPort: !isLocal && import.meta.env.VITE_WEBSOCKET_PORT,
 			enabledTransports: ['ws'],
 			forceTLS: !isLocal,
+			disableStats: true,
+			wsPath: import.meta.env.VITE_WEBSOCKET_PATH || '/ws',
 		});
 
 		WSManager._wsChannel = WSManager._ws.subscribe(store.getState().game.gameId);

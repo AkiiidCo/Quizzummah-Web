@@ -74,6 +74,5 @@ export const QUAnswerLetter = styled.div<{ checked?: boolean; correct?: boolean;
 export const QUAnswerText = styled.div``;
 export const QUAnswerBadge = styled.div`
 	position: absolute;
-	bottom: -10px;
-	right: 0;
+	right: -10px;
 `;
